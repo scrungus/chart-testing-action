@@ -1,6 +1,6 @@
 # *chart-testing* Action
 
-A GitHub Action for installing the [helm/chart-testing](https://github.com/helm/chart-testing) CLI tool.
+A GitHub Action for installing the [helm/chart-testing](https://github.com/scrungus/chart-testing) CLI tool.
 
 ## Usage
 
@@ -73,8 +73,8 @@ jobs:
         run: ct install
 ```
 
-This uses [`helm/kind-action`](https://www.github.com/helm/kind-action) GitHub Action to spin up a [kind](https://kind.sigs.k8s.io/) Kubernetes cluster,
-and [`helm/chart-testing`](https://www.github.com/helm/chart-testing) to lint and test your charts on every pull request.
+This uses [`helm/kind-action`](https://www.github.com/scrungus/kind-action) GitHub Action to spin up a [kind](https://kind.sigs.k8s.io/) Kubernetes cluster,
+and [`helm/chart-testing`](https://www.github.com/scrungus/chart-testing) to lint and test your charts on every pull request.
 
 ## Upgrading from v1.x.x
 

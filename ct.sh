@@ -88,7 +88,7 @@ install_chart_testing() {
         mkdir -p "$cache_dir"
 
         echo "Installing chart-testing..."
-        curl -sSLo ct.tar.gz "https://github.com/helm/chart-testing/releases/download/$version/chart-testing_${version#v}_linux_amd64.tar.gz"
+        curl -sSLo ct.tar.gz "https://github.com/scrungus/chart-testing/releases/download/$version/chart-testing_${version#v}_linux_amd64.tar.gz"
         tar -xzf ct.tar.gz -C "$cache_dir"
         rm -f ct.tar.gz
 
@@ -106,7 +106,7 @@ install_chart_testing() {
         pip3 install "yamale==${yamale_version}"
     fi
 
-    # https://github.com/helm/chart-testing-action/issues/62
+    # https://github.com/scrungus/chart-testing-action/issues/62
     echo 'Adding ct directory to PATH...'
     echo "$cache_dir" >> "$GITHUB_PATH"
 
