@@ -1,6 +1,6 @@
-name: "Helm Chart Testing"
+name: "Helm Chart Testing -- ExtraValues fork "
 description: "Install the Helm chart-testing tool"
-author: "The Helm authors"
+author: "(forked) The Helm authors"
 branding:
   color: blue
   icon: anchor
