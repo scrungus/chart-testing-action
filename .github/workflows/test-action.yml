@@ -1,6 +1,6 @@
 name: test-chart-testing-action
 
-on: [pull_request]
+on: [workflow_dispatch]
 
 jobs:
   test_ct_action:
